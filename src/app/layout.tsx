@@ -11,6 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Clean Meter App",
   description: "Minimalist performance monitor to track your system's stats in real-time",
+  openGraph: {
+    images: ["https://www.cleanmeter.app/logo.png"]
+  }
 };
 
 export default function RootLayout({
