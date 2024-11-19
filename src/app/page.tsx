@@ -30,7 +30,7 @@ export default function Home() {
           <h1>Clean Meter</h1>
           <div>
             <p>Minimalistic performance monitor to track</p>
-            <p>your system's stats in real-time</p>
+            <p>your system&apos;s stats in real-time</p>
           </div>
         </div>
 
