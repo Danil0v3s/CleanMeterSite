@@ -3,14 +3,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col justify-center h-screen">
-      <div className="absolute flex aspect-[9/16] h-full md:aspect-video">
-        <iframe
-          className="aspect-[9/16] h-full md:aspect-video"
-          src="https://www.youtube.com/embed/G79McCEQCQg?si=FRZy5iNukuRqs8gE&autoplay=1&mute=1&loop=1&rel=0&showinfo=0&controls=0&color=white&iv_load_policy=3&enablejsapi=1&hd=1&vq=hd1080&playlist=G79McCEQCQg"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
+      <div className="absolute flex ">
+        <video
+          width={1920}
+          height={1080}
+          src="/cleanmeter.mp4"
+          loop={true}
+          autoPlay={true}
+          muted={true}
+          className="aspect-[9/16] h-full md:aspect-video object-cover"
         />
         <div className="aspect-[9/16] h-full md:aspect-video absolute backdrop-brightness-75" />
       </div>
