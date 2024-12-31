@@ -5,15 +5,15 @@ export default function Home() {
     <div className="flex flex-col justify-center h-screen">
       <div className="absolute flex ">
         <video
-          width={1920}
-          height={1080}
+          // width={1920}
+          // height={1080}
           src="/cleanmeter.mp4"
           loop={true}
           autoPlay={true}
           muted={true}
-          className="aspect-[9/16] h-full md:aspect-video object-cover"
+          style={{ height: '100vh', width: '100vw', objectFit: 'contain' }}
         />
-        <div className="aspect-[9/16] h-full md:aspect-video absolute backdrop-brightness-75" />
+        <div className="size-full absolute backdrop-brightness-75" />
       </div>
       <div className="absolute z-1 size-full grid-bg" />
 
@@ -37,7 +37,7 @@ export default function Home() {
 
         <div className="flex gap-4 items-center flex-col">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-black text-white gap-2 text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-primary text-white gap-2 text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://github.com/Danil0v3s/CleanMeter/releases/latest/download/cleanmeter.windows.zip"
             target="_blank"
             rel="noopener noreferrer"
@@ -106,6 +106,21 @@ export default function Home() {
             height={16}
           />
           Source code
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://github.com/Danil0v3s/CleanMeter/releases"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="download.svg"
+            alt="GitHub icon"
+            width={16}
+            height={16}
+          />
+          All releases
         </a>
       </footer>
     </div>
